@@ -27,5 +27,22 @@ public class Test {
         for (int i = 0; i < danhSachSach.size(); i++) {
             danhSachSach.get(i).hienThiThongTin();
         }
+
+        // Su dung Getter
+        System.out.println("\nTieu de sach: " + Toan.getTieuDe());
+        System.out.println("Tac gia: " + Toan.getTacGia());
+        System.out.println("So luong: " + Toan.getSoLuong());
+
+        // Su dung Setter
+        Toan.setTieuDe("Giai tich II");
+        Toan.setSoLuong(10);
+
+        // Hien thi thong tin sau khi sua
+        System.out.println("\nThong tin sau khi cap nhat:");
+        Toan.hienThiThongTin();
+
+        // Kiem tra du lieu khong hop le
+        Toan.setNamXuatBan(2030);
+        Toan.setSoLuong(-5);
     }
 }
